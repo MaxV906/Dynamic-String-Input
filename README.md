@@ -23,6 +23,5 @@ free(new_string);
 
 You can install the parser library by running the following commands:
 ```bash
-make
 sudo make install
 ```
