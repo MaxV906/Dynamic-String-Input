@@ -1,11 +1,9 @@
 #include <stdio.h>
-#include "scanner.h"
+#include "input.h"
 
 int main() {
 
-    char* new_string;
-
-    string_scanner(&new_string);
+    char *new_string = input();
 
     printf("\n%s\n", new_string);
     free(new_string);
