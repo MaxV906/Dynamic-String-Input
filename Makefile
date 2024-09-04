@@ -1,11 +1,14 @@
 
 all: compile
 
-compile: example.c scanner.h
-	gcc -o scanner example.c 
+compile: example.c input.h
+	gcc -o input example.c 
 
 install:
-	cp -f scanner.h /usr/include/scanner.h
+	cp -f input.h /usr/include/input.h
+
+uninstall:
+	rm /usr/include/input.h
 
 clean:
-	rm scanner
+	rm input
