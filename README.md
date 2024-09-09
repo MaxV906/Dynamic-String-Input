@@ -4,6 +4,16 @@ A simple dynamic string library written for C.
 
 # Usage
 
+After installation include input.h in your headers
+```C
+#include <input.h>
+```
+
+When compiling add -linput to your gcc arguments
+```C
+gcc example.c -o example -linput
+```
+
 ### Create a char pointer and assign it to the output of the "input" function
 ```C
 char* new_string = input();
@@ -18,5 +28,6 @@ free(new_string);
 
 You can install the parser library by running the following commands:
 ```bash
+make
 sudo make install
 ```
